@@ -1,0 +1,18 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>new_file</title>
+		<meta name="generator" content="Studio 3 http://aptana.com/">
+		<meta name="author" content="Administrator">
+		<!-- Date: 2011-07-05 -->
+	</head>
+	<body>
+		<div id="header">
+			
+			Header
+			
+		</div>
