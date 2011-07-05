@@ -3,6 +3,14 @@
 ?>
 		<div id="container">
 			Container...
+			
+			<div id="content">
+				Content
+			</div>
+			
+			<div id="sidebar">
+				Sidebar Area
+			</div>
 		</div>
 		
 
