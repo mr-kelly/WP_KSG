@@ -6,7 +6,11 @@
 	get_header();
 ?>
 
-	It's Home!
+	<div id="container">
+		
+		首页Container
+		
+	</div>
 <?php
 	get_footer();
 ?>

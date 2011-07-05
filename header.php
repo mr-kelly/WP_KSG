@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 
@@ -35,13 +34,11 @@
 
 		
 		<?php // Kelly: 基准CSS ?>
-		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_directory' ); ?>/base.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/base.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		
 		<?php
-		//	wp_meta();
 			wp_head();
-			
 		?>
 		
 	</head>
@@ -51,6 +48,7 @@
 			Header
 			
 			<?php
+				// KK: 系统的菜单，可以通过后台灵活修改
 				wp_nav_menu();
 			?>
 		</div>
