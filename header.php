@@ -25,17 +25,32 @@
 					echo ' - ' . sprintf(_( 'Page %s', 'seasungame' ), max( $paged, $page ));
 				}
 				
-				
 			?>
 		</title>
-		<meta name="generator" content="Studio 3 http://aptana.com/">
-		<meta name="author" content="Administrator">
+		
+		<meta name="generator" content="Editor">
+		<meta name="author" content="Kingsoft">
+		
+		
+
+		
+		<?php // Kelly: 基准CSS ?>
+		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_directory' ); ?>/base.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-		<!-- Date: 2011-07-05 -->
+		
+		<?php
+		//	wp_meta();
+			wp_head();
+			
+		?>
+		
 	</head>
-	<body>
+	<body <?php body_class($class);?>>
 		<div id="header">
 			
 			Header
 			
+			<?php
+				wp_nav_menu();
+			?>
 		</div>
