@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 		<div id="footer">
 			<div id="site-info">
 				Goto
