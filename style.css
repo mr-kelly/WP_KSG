@@ -19,6 +19,11 @@ body{
 #container{
 	margin: 0 auto;
 	width: 800px;
-	background-color: blue;
+	background-color: gray;
 }
 
+.menu {
+	width: 100px;
+	list-style-type: none;
+ 	background-color: gray;
+}

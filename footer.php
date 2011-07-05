@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 		<div id="footer">
 			<div id="site-info">
 				Goto
@@ -6,9 +7,15 @@
 				</a>
 			</div><!-- #site-info -->
 			Footer
-		<?php
-			wp_footer();
-		?>
+
+			<div id="footer">
+				Footer
+				<?php
+					wp_footer();
+				?>
+			</div>
+			
 		</div>
+		
 	</body>
 </html>
