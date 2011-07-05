@@ -1,4 +1,3 @@
 <?php
-	echo 'entry';echo 'fuck';//
-	echo 'kelly come';
-?>
+	echo 'kelly git-configed!';
+	
