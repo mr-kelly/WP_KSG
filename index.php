@@ -1,3 +1,3 @@
 <?php
-	echo 'entry';// fuck
+	echo 'dot dot dot';// fuck
 ?>
