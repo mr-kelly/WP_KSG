@@ -70,15 +70,10 @@ body{
 			height: 22px;
 			line-height: 22px;
 			border: 1px solid #CCC;
+			float: left;
 			display: inline-block;
 			text-align: center;
 		}
-
-	.page_item{
-		list-style-type: none;
-		display: inline;
-		border-width: 1px;
-	}
 
 /* container */
 
@@ -101,7 +96,7 @@ body{
 	border-width: 1px;
 	border-color: #CCC;
 	border-style: solid;
-	
+
 	min-height: 50px;
 }
 
@@ -117,6 +112,10 @@ body{
 		width: 23%;
 		height: 100px;
 		border: 1px solid #CCC;
+	}
+	
+	.home_news_box li{
+		list-style-type: none;
 	}
 	
 	
