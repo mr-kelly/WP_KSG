@@ -3,8 +3,17 @@
 ?>
 
 	<div>
+		<?php
+			// 初始化post的内容变量..
+			the_post();
+			
+			
+			
+			the_title();
+			
+			the_content();
+		?>
 		
-		Single page...
 		
 	</div>
 
