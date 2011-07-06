@@ -12,11 +12,14 @@
 				the_post();
 				
 				the_title();
+				
+				the_content();
 			?>
 		</div>
 		
 		<?php get_sidebar(); ?>
 		
+		<div class="clearboth"></div>
 		
 	</div>
 

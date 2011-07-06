@@ -33,6 +33,12 @@
 
 
 
+
+
+
+
+
+
 /**
  * 主题设置  Theme Settings
  * 金山西山居主题, 后台模板<管理选项>...
@@ -40,8 +46,12 @@
  * 		让后台的<控制板>菜单下出现<西山居设置>，并提供设置选项...
  * 
  */
+
+ // 定义一个常量, 用于读取存放在数据库的option...
+define( 'THEME_OPTION_KEY', 'seasungame_options');
+
 class ThemeSetting {
-	
+
 	/**
 	 * 设置页面初始化
 	 */
@@ -60,20 +70,35 @@ class ThemeSetting {
 							array('ThemeSetting', 'setting_page_display'));	
 	
 	}
-	
-	
+	/**
+	 *  专有函数读取option设置.   特点是如果没有该option设置会自动判断并创建它..
+	 */
+	function get_theme_options() {
+		
+		$options = get_option( THEME_OPTION_KEY );
+		
+		// 如果从来没有option数据记录.(即第一次), 创建它.
+		if ( !is_array($opions)) {
+			$options = array();
+			
+			update_option( THEME_OPTION_KEY, $options );
+		}
+		
+		return $options;
+		
+	}
 	
 	/**
 	 * 设置页面html显示...
 	 */
 	function setting_page_display() {
+		// 读取设置
+		$options = ThemeSetting::get_theme_options();
+		
 		// 接下来是HTML标签，直接显示...	
+		//print_r( $options );
 ?>
 		<div class="wrap">
-			
-
-			
-			
 			
 			<?php // 一个装B的设置图标  ?>
 			<div id="icon-options-general" class="icon32"><br></div>
