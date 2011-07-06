@@ -51,13 +51,17 @@
 		
 	</head>
 	<body <?php body_class($class);?>>
-		<div id="header">
-			
-			Header
+		
+		<div id="wrapper">
 
 			
-			<?php
-				// KK: 系统的菜单，可以通过后台灵活修改
-				wp_nav_menu();
-			?>
-		</div>
+			<div id="header">
+				<a href="<?php echo home_url( '/' );?>">
+					Header
+				</a>
+				
+				<?php
+					// KK: 系统的菜单，可以通过后台灵活修改
+					wp_nav_menu();
+				?>
+			</div>

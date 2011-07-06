@@ -8,9 +8,7 @@
 				Content
 			</div>
 			
-			<div id="sidebar">
-				Sidebar Area
-			</div>
+			
 		</div>
 		
 
