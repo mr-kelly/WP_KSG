@@ -42,15 +42,20 @@
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.backgroundPosition.js"></script>
 		<script type="text/javascript">
 			
+			// 变量申明
 			var home_window_pos=-200;
 			
+			// jQuery document.ready
 			jQuery(document).ready(function(){
+			// 初始化后加载的效果等
+				// #home_window 图片自动播放
 				jQuery('#home_window').css("display", "none");
 				jQuery('#home_window').fadeIn(1000);
 				setInterval('home_window_move()', 1000);
 			});
 			
-			function home_window_move(){
+			// functions
+			function home_window_move(){   // 控制图片   #home_window 处
 				jQuery('#home_window').animate({backgroundPosition: '('+ home_window_pos + 'px 0px)'}, 100);
 				home_window_pos-=200;
 			}
