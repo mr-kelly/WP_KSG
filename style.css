@@ -16,14 +16,35 @@ body{
 	margin: 0;
 }
 
-#container{
+/* header */
+#header{
 	margin: 0 auto;
-	width: 800px;
+	width: 960px;
 	background-color: #808080;
 }
 
 .menu {
-	width: 100px;
-	list-style-type: none;
+	width: 500px;
  	background-color: #808080;
+ 	padding-left: 0px;
+}
+
+.page_item{
+	list-style-type: none;
+	display: inline;
+	border-width: 1px;
+}
+
+/* container */
+#container{
+	margin: 0 auto;
+	width: 960px;
+	background-color: #808080;
+}
+
+/* footer */
+#footer{
+	margin: 0 auto;
+	width: 960px;
+	background-color: #808080;
 }
