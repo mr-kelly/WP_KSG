@@ -10,11 +10,63 @@ License URI: license.txt
 Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
 */
 
-body {
+body{
+	font-weight: normal;
 	font-size: 12px;
 	margin: 0;
 }
-#container{
-	background-color: blue;
+
+/* header */
+#header{
+	margin: 0 auto;
+	width: 960px;
+	background-color: #808080;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
 }
 
+.menu {
+	width: 500px;
+ 	background-color: #808080;
+ 	padding-left: 0px;
+}
+
+.page_item{
+	list-style-type: none;
+	display: inline;
+	border-width: 1px;
+}
+
+/* container */
+#container{
+	margin: 0 auto;
+	width: 960px;
+	background-color: #808080;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+}
+
+#home_window_main{
+	overflow: hidden;	
+	display: block;
+}
+
+.home_window{
+	margin: 0 auto;
+	width: 900px;   /* 图片宽度 待定 */
+	height: 400px;  /* 图片高度待定 */
+	background-color: #707070;
+	display: none;
+}
+
+/* footer */
+#footer{
+	margin: 0 auto;
+	width: 960px;
+	background-color: #808080;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+}

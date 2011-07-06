@@ -45,7 +45,7 @@
 	<body <?php body_class($class);?>>
 		
 		<div id="wrapper">
-			
+
 			
 			<div id="header">
 				
