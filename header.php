@@ -40,6 +40,7 @@
 		
 		
 		<?php wp_enqueue_script('jquery'); // Wordpess jquery 1.6.1 ?>
+		
 		<?php
 			wp_head();
 		?>

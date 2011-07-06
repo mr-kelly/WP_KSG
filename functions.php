@@ -13,7 +13,6 @@
 					
 					// 将array post内的信息转化成全局post变量内容...
 			setup_postdata( $post );
-					
 ?>
 			
 			<li class="news_box_item">
@@ -121,8 +120,6 @@ class ThemeSetting {
 			
 			
 			<form method="post">
-
-
 				<table class="form-table">
 					<tbody>
 						<tr valign="top">
