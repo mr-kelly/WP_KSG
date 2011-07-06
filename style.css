@@ -21,6 +21,9 @@ body{
 	margin: 0 auto;
 	width: 960px;
 	background-color: #808080;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
 }
 
 .menu {
@@ -40,6 +43,15 @@ body{
 	margin: 0 auto;
 	width: 960px;
 	background-color: #808080;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+}
+
+.home_window{
+	margin: 0;
+	width: 900px;   /* 图片宽度 待定 */
+	height: 400px;  /* 图片高度待定 */
 }
 
 /* footer */
@@ -47,4 +59,7 @@ body{
 	margin: 0 auto;
 	width: 960px;
 	background-color: #808080;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
 }

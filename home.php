@@ -9,6 +9,7 @@
 	<div id="container">
 		
 		首页Container
+		<div class="home_window" id="home_window1"></div>
 		
 	</div>
 <?php
