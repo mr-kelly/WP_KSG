@@ -88,7 +88,7 @@ body{
 	border-width: 1px;
 	border-color: #CCC;
 	border-style: solid;
-	
+	height: 50px;
 	min-height: 50px;
 }
 
@@ -104,6 +104,10 @@ body{
 		width: 23%;
 		height: 100px;
 		border: 1px solid #CCC;
+	}
+	
+	.home_news_box li{
+		list-style-type: none;
 	}
 	
 	
