@@ -2,11 +2,13 @@
 	/**
 	 * Home Front Page 静态首页
 	 */
-	
+	 
+	 
+	// TODO abc
 	get_header();
 ?>
 
-
+	
 	<div id="home_window">
 		Home Window
 	</div>
@@ -19,7 +21,6 @@
 	<div id="home_news_container">
 
 		<div class="home_news_box">
-			News Box 1
 			<?php
 				// 根据主题设置读取新闻， 该函数在functions.php哦...
 				news_box_reader( null );
