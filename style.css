@@ -10,61 +10,84 @@ License URI: license.txt
 Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
 */
 
+.clearboth {
+	clear: both;
+}
+
 body{
 	font-weight: normal;
 	font-size: 12px;
 	margin: 0;
+	text-align: center;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
 }
 
 /* header */
 #header{
 	margin: 0 auto;
-	width: 960px;
+	width: 100%;
 	background-color: #808080;
 	border-width: 1px;
 	border-color: #000000;
 	border-style: solid;
 }
 
-.menu {
-	width: 500px;
- 	background-color: #808080;
- 	padding-left: 0px;
-}
+	.menu {
+		width: 500px;
+ 		background-color: #808080;
+ 		padding-left: 0px;
+	}
 
-.page_item{
-	list-style-type: none;
-	display: inline;
-	border-width: 1px;
-}
+	.page_item{
+		list-style-type: none;
+		display: inline;
+		border-width: 1px;
+	}
 
 /* container */
-#container{
-	margin: 0 auto;
-	width: 960px;
-	background-color: #808080;
-	border-width: 1px;
-	border-color: #000000;
-	border-style: solid;
-}
 
-#home_window_main{
+#home_window{
+	margin: 0 auto;
+	width: 100%;
+	height: 400px;
+	background-image:url('images/bg_test.JPG');
+	background-repeat: no-repeat;
 	overflow: hidden;	
 	display: block;
 }
 
-.home_window{
-	margin: 0 auto;
-	width: 900px;   /* 图片宽度 待定 */
-	height: 400px;  /* 图片高度待定 */
-	background-color: #707070;
-	display: none;
+#home_guide{
+	width: 100%;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+	
 }
 
+#home_news_container {
+	width: 100%;
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+}
+	
+	.home_news_box {
+		float: left;
+		width: 100px;
+		height: 100px;
+		border: 1px solid #CCC;
+	}
+	
+	
 /* footer */
 #footer{
 	margin: 0 auto;
-	width: 960px;
+	width: 100%;
 	background-color: #808080;
 	border-width: 1px;
 	border-color: #000000;

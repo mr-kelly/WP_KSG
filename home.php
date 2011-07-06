@@ -34,22 +34,15 @@
 				news_box_reader( null );
 			?>
 		</div>
-			
+		
+		<div class="clearboth"></div>
 	</div>
 	
 	<!--
 	<div id="container">
 		
-		<div class="home_window" id="home_window_main">
-			<div class="home_window" id="home_window1">
-			
-			</div>
-			<div class="home_window" id="home_window2">
-			
-			</div>
-			<div class="home_window" id="home_window3">
-			
-			</div>
+		<div id="home_window">
+
 		</div>
 		
 	</div>
