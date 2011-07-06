@@ -14,6 +14,15 @@ Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, ri
 	clear: both;
 }
 
+a, a:active ,a:visited, a:link {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #333;
+}
+
 body{
 	font-weight: normal;
 	font-size: 12px;
@@ -73,6 +82,10 @@ body{
 
 /* container */
 
+
+/**
+ * 	首页home的东西...
+ */
 #home_window{
 	margin: 0 auto;
 	width: 100%;
