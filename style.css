@@ -61,15 +61,10 @@ body{
 			height: 22px;
 			line-height: 22px;
 			border: 1px solid #CCC;
+			float: left;
 			display: inline-block;
 			text-align: center;
 		}
-
-	.page_item{
-		list-style-type: none;
-		display: inline;
-		border-width: 1px;
-	}
 
 /* container */
 
