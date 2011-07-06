@@ -37,8 +37,15 @@
 		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/base.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		
+		
+		
+		<?php wp_enqueue_script('jquery'); // Wordpess jquery 1.6.1 ?>
+		<?php
+			wp_head();
+		?>
+		
+		
 		<?php // jQuery & 其他js ?>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.6.min.js"></script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.backgroundPosition.js"></script>
 		<script type="text/javascript">
 			
@@ -57,9 +64,7 @@
 			
 		</script>
 		
-		<?php
-			wp_head();
-		?>
+
 		
 	</head>
 	<body <?php body_class($class);?>>
