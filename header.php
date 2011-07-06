@@ -73,6 +73,7 @@
 				//jQuery('.home_news_box').css("display", "none");
 				//jQuery('.home_news_box').fadeIn(1000);
 				//jQuery('.home_news_box').stop().animat({opacity: 100}, 500);
+				jQuery('.home_news_box:eq(0)').fadeOut(1000);
 			});
 			
 			// functions
