@@ -89,6 +89,10 @@ body{
 	background-repeat: no-repeat;
 	overflow: hidden;	
 	display: block;
+	
+	border-width: 1px;
+	border-color: #CCC;
+	border-style: solid;
 }
 
 #home_guide{

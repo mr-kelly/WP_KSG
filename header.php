@@ -33,7 +33,7 @@
 		
 
 		
-		<?php // Kelly: 基准CSS ?>
+		<!-- // Kelly: 基准CSS -->
 		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/base.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		
@@ -45,7 +45,7 @@
 		?>
 		
 		
-		<?php // jQuery & 其他js ?>
+		<!-- // jQuery & 其他js过程 -->
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.backgroundPosition.js"></script>
 		<script type="text/javascript">
 			
@@ -67,7 +67,7 @@
 			
 			// functions
 			function home_window_move(){   // 控制图片   #home_window 处
-				jQuery('#home_window').stop().animate({backgroundPosition: '('+ home_window_pos + 'px 0px)'}, 100);
+				jQuery('#home_window').stop().animate({backgroundPosition: '('+ home_window_pos + 'px 0px)'}, 1000);
 				home_window_pos-=200;
 			}
 			
