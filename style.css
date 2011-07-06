@@ -48,10 +48,17 @@ body{
 	border-style: solid;
 }
 
+#home_window_main{
+	overflow: hidden;	
+	display: block;
+}
+
 .home_window{
-	margin: 0;
+	margin: 0 auto;
 	width: 900px;   /* 图片宽度 待定 */
 	height: 400px;  /* 图片高度待定 */
+	background-color: #707070;
+	display: none;
 }
 
 /* footer */

@@ -8,8 +8,17 @@
 
 	<div id="container">
 		
-		首页Container
-		<div class="home_window" id="home_window1"></div>
+		<div class="home_window" id="home_window_main">
+			<div class="home_window" id="home_window1">
+			
+			</div>
+			<div class="home_window" id="home_window2">
+			
+			</div>
+			<div class="home_window" id="home_window3">
+			
+			</div>
+		</div>
 		
 	</div>
 <?php
