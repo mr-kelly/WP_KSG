@@ -38,11 +38,23 @@
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		
 		<?php // jQuery & 其他js ?>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.6.min.js" />"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.backgroundPosition.js"></script>
 		<script type="text/javascript">
-			$(document).ready(function(){
-				alert('ready');
+			
+			var home_window_pos=-200;
+			
+			jQuery(document).ready(function(){
+				jQuery('#home_window').css("display", "none");
+				jQuery('#home_window').fadeIn(1000);
+				setInterval('home_window_move()', 1000);
 			});
+			
+			function home_window_move(){
+				jQuery('#home_window').animate({backgroundPosition: '('+ home_window_pos + 'px 0px)'}, 100);
+				home_window_pos-=200;
+			}
+			
 		</script>
 		
 		<?php

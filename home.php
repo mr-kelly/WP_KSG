@@ -33,7 +33,8 @@
 				news_box_reader( null );
 			?>
 		</div>
-			
+		
+		<div class="clearboth"></div>
 	</div>
 	
 	<!--
