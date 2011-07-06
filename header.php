@@ -43,12 +43,16 @@
 		
 	</head>
 	<body <?php body_class($class);?>>
-		<div id="header">
+		
+		<div id="wrapper">
 			
-			Header
 			
-			<?php
-				// KK: 系统的菜单，可以通过后台灵活修改
-				wp_nav_menu();
-			?>
-		</div>
+			<div id="header">
+				
+				Header
+				
+				<?php
+					// KK: 系统的菜单，可以通过后台灵活修改
+					wp_nav_menu();
+				?>
+			</div>
