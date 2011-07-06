@@ -102,6 +102,7 @@ body{
 
 #home_news_container {
 	width: 100%;
+	position: relative;
 	border-width: 1px;
 	border-color: #CCC;
 	border-style: solid;

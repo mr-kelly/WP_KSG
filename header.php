@@ -52,11 +52,15 @@
 				jQuery('#home_window').css("display", "none");
 				jQuery('#home_window').fadeIn(1000);
 				setInterval('home_window_move()', 1000);
+				
+				//jQuery('.home_news_box').css("display", "none");
+				//jQuery('.home_news_box').fadeIn(1000);
+				//jQuery('.home_news_box').stop().animat({opacity: 100}, 500);
 			});
 			
 			// functions
 			function home_window_move(){   // 控制图片   #home_window 处
-				jQuery('#home_window').animate({backgroundPosition: '('+ home_window_pos + 'px 0px)'}, 100);
+				jQuery('#home_window').stop().animate({backgroundPosition: '('+ home_window_pos + 'px 0px)'}, 100);
 				home_window_pos-=200;
 			}
 			
