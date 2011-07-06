@@ -37,6 +37,14 @@
 		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/base.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		
+		<?php // jQuery & 其他js ?>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.6.min.js" />"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				alert('ready');
+			});
+		</script>
+		
 		<?php
 			wp_head();
 		?>
