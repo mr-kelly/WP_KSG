@@ -2,17 +2,19 @@
 	get_header();
 ?>
 
-	<div>
-		<?php
-			// 初始化post的内容变量..
-			the_post();
-			
-			
-			
-			the_title();
-			
-			the_content();
-		?>
+	<div id="container">
+		<div id="content">
+			<?php
+				// 初始化post的内容变量..
+				the_post();
+				
+				
+				
+				the_title();
+				
+				the_content();
+			?>
+		</div>
 		
 		
 		<?php

@@ -48,8 +48,9 @@
 
 			
 			<div id="header">
-				
-				Header
+				<a href="<?php echo home_url( '/' );?>">
+					Header
+				</a>
 				
 				<?php
 					// KK: 系统的菜单，可以通过后台灵活修改

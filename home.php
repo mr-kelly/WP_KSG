@@ -17,34 +17,21 @@
 	
 	
 	<div id="home_news_container">
-		
+
 		<div class="home_news_box">
 			News Box 1
 			<?php
-				global $post;
-				// TODO: 获取数据库option设置的文章分类...
-				$news_posts = get_posts();
-				
-				foreach( $news_posts as $post ):
-					
-					// 将array post内的信息转化成全局post变量内容...
-					setup_postdata( $post );
-					
-			?>
-			<a href="<?php the_permalink();?>">
-				<?php the_title();?>
-			</a>
-			
-			<?php
-				
-					
-					
-				endforeach;
+				// 根据主题设置读取新闻， 该函数在functions.php哦...
+				news_box_reader( null );
 			?>
 		</div>
 		
 		<div class="home_news_box">
 			News Box 2
+			
+			<?php
+				news_box_reader( null );
+			?>
 		</div>
 			
 	</div>

@@ -1,6 +1,24 @@
 <?php
-
-
+	/**
+	 *  用于首页，读取 option设置的新闻, 放入div news_box...
+	 */
+	function news_box_reader( $option = null ) {
+		global $post;
+				// TODO: 获取数据库option设置的文章分类...
+		$news_posts = get_posts( $option );
+				
+		foreach( $news_posts as $post ):
+					
+					// 将array post内的信息转化成全局post变量内容...
+			setup_postdata( $post );
+					
+?>
+			<a href="<?php the_permalink();?>">
+				<?php the_title();?>
+			</a>
+<?php										
+		endforeach;
+	}
 
 
 
