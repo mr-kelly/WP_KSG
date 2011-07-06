@@ -5,15 +5,13 @@
 					<?php bloginfo( 'name' ); ?>
 				</a>
 			</div><!-- #site-info -->
-			Footer
 
-			<div id="footer">
-				Footer
+			<div>
 				<?php
 					wp_footer();
 				?>
 			</div>
-			
+
 		</div>
 		
 	</body>
