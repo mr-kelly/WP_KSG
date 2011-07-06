@@ -68,9 +68,12 @@
 
 			
 			<div id="header">
-				<a href="<?php echo home_url( '/' );?>">
-					Header
-				</a>
+				
+				<div id="logo">
+					<a href="<?php echo home_url( '/' );?>">
+						LOGO,返回首页
+					</a>
+				</div>
 				
 				<?php
 					// KK: 系统的菜单，可以通过后台灵活修改

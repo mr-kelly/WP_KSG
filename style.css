@@ -1,5 +1,5 @@
 /*
-Theme Name: Seasungame  金山西山居
+Theme Name: Seasungame 金山西山居
 Theme URI: http://www.seasungame.com/
 Author: Kingsoft Game
 Author URI: http://www.kingsoft.com/
@@ -19,6 +19,8 @@ body{
 	font-size: 12px;
 	margin: 0;
 	text-align: center;
+	
+	background: #F3F3F3;
 }
 
 #wrapper {
@@ -31,17 +33,37 @@ body{
 #header{
 	margin: 0 auto;
 	width: 100%;
-	background-color: #808080;
+	/*background-color: #808080;*/
 	border-width: 1px;
-	border-color: #000000;
+	border-color: #CCC;
 	border-style: solid;
+	position: relative;
+	
+	min-height: 120px;
 }
 
+/**
+ * 	 顶部菜单 ...
+ */
+	#header .menu {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 	.menu {
 		width: 500px;
- 		background-color: #808080;
+ 		/*background-color: #808080;*/
  		padding-left: 0px;
+ 		border: 1px solid #CCC;
 	}
+		.menu ul li {
+			width: 80px;
+			height: 22px;
+			line-height: 22px;
+			border: 1px solid #CCC;
+			display: inline-block;
+			text-align: center;
+		}
 
 	.page_item{
 		list-style-type: none;
@@ -64,21 +86,22 @@ body{
 #home_guide{
 	width: 100%;
 	border-width: 1px;
-	border-color: #000000;
+	border-color: #CCC;
 	border-style: solid;
 	
+	min-height: 50px;
 }
 
 #home_news_container {
 	width: 100%;
 	border-width: 1px;
-	border-color: #000000;
+	border-color: #CCC;
 	border-style: solid;
 }
 	
 	.home_news_box {
 		float: left;
-		width: 100px;
+		width: 23%;
 		height: 100px;
 		border: 1px solid #CCC;
 	}
@@ -88,8 +111,12 @@ body{
 #footer{
 	margin: 0 auto;
 	width: 100%;
-	background-color: #808080;
+	
+	/*background-color: #808080;*/
 	border-width: 1px;
-	border-color: #000000;
+	border-color: #CCC;
 	border-style: solid;
+	text-align: center;
+	
+	min-height: 120px;
 }

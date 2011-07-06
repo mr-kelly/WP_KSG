@@ -10,7 +10,7 @@
 
 	
 	<div id="home_window">
-		Home Window
+		
 	</div>
 	
 	<div id="home_guide">
@@ -19,21 +19,15 @@
 	
 	
 	<div id="home_news_container">
-
+		<?php foreach( range(1,4) as $i ): ?>
 		<div class="home_news_box">
 			<?php
 				// 根据主题设置读取新闻， 该函数在functions.php哦...
 				news_box_reader( null );
 			?>
 		</div>
+		<?php endforeach; ?>
 		
-		<div class="home_news_box">
-			News Box 2
-			
-			<?php
-				news_box_reader( null );
-			?>
-		</div>
 		
 		<div class="clearboth"></div>
 	</div>
