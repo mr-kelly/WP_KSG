@@ -67,21 +67,30 @@
 			// 变量申明
 			var home_window_pos = -960;   // 负的1格图片宽度
 			
-			// jQuery document.ready
+			
+			// jQuery document.ready   根据元素是否存在来设置元素
 			jQuery(document).ready(function(){
-			// 初始化后加载的效果等
-				// #home_window 图片自动播放
-				jQuery('#home_window').css("display", "none");
-				jQuery('#home_window').fadeIn(1000);
-				setInterval('home_window_move()', 2000);
+			
+				if (jQuery('#home_window').size()){    // #home_window 作为标识A 如果存在  则为首页
+					// #home_window 图片自动播放
+					jQuery('#home_window').css("display", "none");
+					jQuery('#home_window').fadeIn(1000);
+					setInterval('home_window_move()', 2000);
+					
+									
+					// .home_news_box
+					//jQuery('.home_news_box').css("display", "none");
+					//jQuery('.home_news_box').fadeIn(1000);
+					//jQuery('.home_news_box').stop().animat({opacity: 100}, 500);
+					//jQuery('.home_news_box:eq(0)').fadeOut(1000);
+					//jQuery('.home_news_box').addGlow({ textColor: 'white', haloColor: '#aaa', radius: 100 });
 				
-				// .home_news_box
-				//jQuery('.home_news_box').css("display", "none");
-				//jQuery('.home_news_box').fadeIn(1000);
-				//jQuery('.home_news_box').stop().animat({opacity: 100}, 500);
-				//jQuery('.home_news_box:eq(0)').fadeOut(1000);
-				//jQuery('.home_news_box').addGlow({ textColor: 'white', haloColor: '#aaa', radius: 100 });
 				
+				} else{
+					alert('not mainpage');
+				}
+
+
 				      
 				// 初始化后的事件
 				// .news_box_item 事件
@@ -90,10 +99,10 @@
 					//jQuery(this).append('<div class="news_box_item_content"></div>');
 					//jQuery('.news_box_item_content').css("height", "0");
 					//jQuery('.news_box_item_content').css("width", "100%");
-					//jQuery(this).css("font-size", "12pt");
+					jQuery(this).css("font-size", "12pt");
   				});
  				jQuery('.news_box_item').mouseout(function(){
-					//jQuery(this).css("font-size", "9pt");
+					jQuery(this).css("font-size", "9pt");
   				});
 
 				
