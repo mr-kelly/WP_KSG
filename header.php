@@ -48,12 +48,15 @@
 		
 		<!-- // jQuery & 其他js过程 -->
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.backgroundPosition.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.easing.1.3.js"></script>
+		
+		<!-- 主页的 JS -- TODO: 将此JS写入文件 判断页面为主页时加载此JS -->
 		<script type="text/javascript">
 			
 			// php申明 js变量
 			<?php  // 获取图片相关信息
 				$home_window_bg_path = get_template_directory_uri();
-				$home_window_bg_path = $home_window_bg_path.'/images/bg_test.JPG';
+				$home_window_bg_path .= '/images/slide_show.JPG';  // 背景图片
 				$arr = getimagesize($home_window_bg_path);
 				//echo $arr[3];
 				$strarr = explode("\"",$arr[3]);
@@ -65,19 +68,28 @@
 			// 变量申明
 			var home_window_pos = -960;   // 负的1格图片宽度
 			
-			// jQuery document.ready
+			
+			// jQuery document.ready   根据元素是否存在来设置元素
 			jQuery(document).ready(function(){
-			// 初始化后加载的效果等
-				// #home_window 图片自动播放
-				jQuery('#home_window').css("display", "none");
-				jQuery('#home_window').fadeIn(1000);
-				setInterval('home_window_move()', 2000);
+			
+				if (jQuery('#home_window').size()){    // #home_window 作为标识 如果存在  则为首页
+					// #home_window 图片自动播放
+					jQuery('#home_window').css("display", "none");
+					jQuery('#home_window').fadeIn(1000);
+					setInterval('home_window_move()', 2000);
+									
+					// .home_news_box
+					//jQuery('.home_news_box').css("display", "none");
+					//jQuery('.home_news_box').fadeIn(1000);
+					//jQuery('.home_news_box').stop().animat({opacity: 100}, 500);
+					//jQuery('.home_news_box:eq(0)').fadeOut(1000);
 				
-				//jQuery('.home_news_box').css("display", "none");
-				//jQuery('.home_news_box').fadeIn(1000);
-				//jQuery('.home_news_box').stop().animat({opacity: 100}, 500);
-				//jQuery('.home_news_box:eq(0)').fadeOut(1000);
-				
+				} else{
+					alert('not mainpage');
+				}
+
+
+				      
 				// 初始化后的事件
 				// .news_box_item 事件
 				jQuery('.news_box_item').mouseover(function(){
@@ -96,7 +108,7 @@
 			
 			// functions
 			function home_window_move(){   // 控制图片   #home_window 处
-				jQuery('#home_window').stop().animate({backgroundPosition: '('+ home_window_pos + 'px 0px)'}, 1000);
+				jQuery('#home_window').stop().animate({backgroundPosition: '('+ home_window_pos + 'px 0px)'}, {duration: 1000, easing: 'easeOutBounce'});
 				home_window_pos -= 960;
 				if (home_window_pos < -home_window_width){
 					home_window_pos = 0;
