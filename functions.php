@@ -11,13 +11,14 @@
 <?php
 		foreach( $news_posts as $post ):
 					
-					// 将array post内的信息转化成全局post变量内容...
+			// 将array post内的信息转化成全局post变量内容...
 			setup_postdata( $post );
 ?>
 			
 			<li class="news_box_item">
 				<a href="<?php the_permalink();?>">
 					<?php the_title();?>
+					
 				</a>
 			</li>
 			

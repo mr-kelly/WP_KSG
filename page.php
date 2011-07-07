@@ -7,6 +7,9 @@
 
 		<div id="content">
 			<?php
+				
+				
+				
 				// 初始化post的内容变量..
 				the_post();
 				
