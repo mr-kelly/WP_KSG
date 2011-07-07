@@ -47,6 +47,7 @@
 		
 		<!-- // jQuery & 其他js过程 -->
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.backgroundPosition.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.easing.1.3.js"></script>
 		<script type="text/javascript">
 			
 			// php申明 js变量
@@ -95,7 +96,7 @@
 			
 			// functions
 			function home_window_move(){   // 控制图片   #home_window 处
-				jQuery('#home_window').stop().animate({backgroundPosition: '('+ home_window_pos + 'px 0px)'}, 1000);
+				jQuery('#home_window').stop().animate({backgroundPosition: '('+ home_window_pos + 'px 0px)'}, {duration: 1000, easing: 'easeOutBounce'});
 				home_window_pos -= 960;
 				if (home_window_pos < -home_window_width){
 					home_window_pos = 0;
