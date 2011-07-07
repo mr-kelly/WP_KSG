@@ -55,7 +55,7 @@
 			// php申明 js变量
 			<?php  // 获取图片相关信息
 				$home_window_bg_path = get_template_directory_uri();
-				$home_window_bg_path = $home_window_bg_path.'/images/slide_show.JPG';  // 背景图片
+				$home_window_bg_path .= '/images/slide_show.JPG';  // 背景图片
 				$arr = getimagesize($home_window_bg_path);
 				//echo $arr[3];
 				$strarr = explode("\"",$arr[3]);
@@ -76,15 +76,12 @@
 					jQuery('#home_window').css("display", "none");
 					jQuery('#home_window').fadeIn(1000);
 					setInterval('home_window_move()', 2000);
-					
 									
 					// .home_news_box
 					//jQuery('.home_news_box').css("display", "none");
 					//jQuery('.home_news_box').fadeIn(1000);
 					//jQuery('.home_news_box').stop().animat({opacity: 100}, 500);
 					//jQuery('.home_news_box:eq(0)').fadeOut(1000);
-					//jQuery('.home_news_box').addGlow({ textColor: 'white', haloColor: '#aaa', radius: 100 });
-				
 				
 				} else{
 					alert('not mainpage');
