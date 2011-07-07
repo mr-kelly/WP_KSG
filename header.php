@@ -71,7 +71,7 @@
 			// jQuery document.ready   根据元素是否存在来设置元素
 			jQuery(document).ready(function(){
 			
-				if (jQuery('#home_window').size()){    // #home_window 作为标识A 如果存在  则为首页
+				if (jQuery('#home_window').size()){    // #home_window 作为标识 如果存在  则为首页
 					// #home_window 图片自动播放
 					jQuery('#home_window').css("display", "none");
 					jQuery('#home_window').fadeIn(1000);
