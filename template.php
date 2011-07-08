@@ -1,16 +1,12 @@
 <?php
 /**
- * Template Name: Showcase Template
- * Description: A Page Template that showcases Sticky Posts, Asides, and Blog Posts
+ * Template Name: 某页面模板
+ * Description: 用于某页面的特殊布局
  *
- * The showcase template in Twenty Eleven consists of a featured posts section using sticky posts,
- * another recent posts area (with the latest post shown in full and the rest as a list)
- * and a left sidebar holding aside posts.
- *
- * We are creating two queries to fetch the proper posts and a custom widget for the sidebar.
+ * 这个模板用于某些Page希望有不同的布局而在Page"快速设置"里可以自定义的模板。
  *
  * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
+ * @subpackage Seasungame_WP
+ * @since Seasungame_WP
  */
 
